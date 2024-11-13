@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "shopsmart-app/build/$1"
+        "dest": "shopsmart-app/build/index.html"
       }
     ]
   }
