@@ -2,14 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "package.json",
-        "use": "@vercel/static-build"
+        "src": "shopsmart-app/package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "shopsmart-app/build" }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "shopsmart-app/build/$1"
       }
     ]
   }
